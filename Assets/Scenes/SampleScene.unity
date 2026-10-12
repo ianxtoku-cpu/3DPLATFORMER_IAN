@@ -141,6 +141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0879fdc977ccd684b9a1f95a5c784ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaypointFollower
+  waypoints:
+  - {fileID: 935601545}
+  - {fileID: 347461958}
+  speed: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
