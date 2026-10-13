@@ -145,6 +145,18 @@ MonoBehaviour:
   - {fileID: 935601545}
   - {fileID: 347461958}
   speed: 1
+--- !u!114 &303556950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303556941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a476cc6980187f468a89daa5519865c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StickyPlatform
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +515,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1407568769156432897, guid: a8ea6b8fc12b7a849a04bcea809002da, type: 3}
       insertIndex: -1
       addedObject: {fileID: 303556946}
+    - targetCorrespondingSourceObject: {fileID: 1407568769156432897, guid: a8ea6b8fc12b7a849a04bcea809002da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 303556950}
   m_SourcePrefab: {fileID: 100100000, guid: a8ea6b8fc12b7a849a04bcea809002da, type: 3}
 --- !u!1 &659775123
 GameObject:
@@ -901,6 +916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1922553398}
+  - component: {fileID: 1922553399}
   m_Layer: 0
   m_Name: MovingPlatform
   m_TagString: Untagged
@@ -926,6 +942,18 @@ Transform:
   - {fileID: 347461959}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1922553399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922553397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a476cc6980187f468a89daa5519865c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StickyPlatform
 --- !u!1001 &2872258749774056599
 PrefabInstance:
   m_ObjectHideFlags: 0
