@@ -334,7 +334,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -360,13 +360,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23620522, y: -0, z: -0, w: 0.9717032}
-  m_LocalPosition: {x: 0, y: 3.7740002, z: -12.96}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.45, z: -6.27}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1827623147}
-  m_LocalEulerAnglesHint: {x: 27.325, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1176,7 @@ GameObject:
   - component: {fileID: 1827623149}
   - component: {fileID: 1827623150}
   - component: {fileID: 1827623151}
+  - component: {fileID: 1827623152}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1349,6 +1350,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45848631a9e215944b26edeef58a2651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemCollector
+--- !u!114 &1827623152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827623143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e0f8b549935fd44b6a2625dea1c382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseLook
+  mouseSensitivity: 4
+  playerCamera: {fileID: 330585546}
+  minPitch: -15
+  maxPitch: 40
 --- !u!1 &1839330167
 GameObject:
   m_ObjectHideFlags: 0

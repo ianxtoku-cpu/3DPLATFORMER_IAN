@@ -31,7 +31,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        rb.linearVelocity = new Vector3(horizontalInput * movementSpeed, rb.linearVelocity.y, verticalInput * movementSpeed);
+        Vector3 move = transform.right * horizontalInput
+              + transform.forward * verticalInput;
+        move = Vector3.ClampMagnitude(move, 1f);
+
+        rb.linearVelocity = new Vector3(move.x * movementSpeed, rb.linearVelocity.y, move.z * movementSpeed);
         
 
 
