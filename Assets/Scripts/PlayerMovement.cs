@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
    void Jump()
     {
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
-        anim.SetBool("Jump");
+     //   anim.SetBool("Jump");
     }
 
 

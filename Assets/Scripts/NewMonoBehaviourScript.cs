@@ -29,7 +29,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void Start()
     {
-        PhysicMaterial = GetComponent<PlayerMovementGrappling>();
+// PhysicMaterial = GetComponent<PlayerMovementGrappling>();
     }
 
     // Update is called once per frame
