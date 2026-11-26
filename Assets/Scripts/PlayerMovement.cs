@@ -2,7 +2,8 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    Animator anim;
+    
 
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask ground;
@@ -13,20 +14,30 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
+        
+
+        
         rb = GetComponent<Rigidbody>();
       
     }
-
+    
     // Update is called once per frame
     void Update()
     {
+        
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+
+        bool moving = horizontalInput != 0 || verticalInput != 0;
+        anim.SetBool("isRunning", moving && IsGrounded());
 
 
         if (Input.GetButtonDown("Jump")&& IsGrounded() )
         {
             Jump();
+
 
         }
 
@@ -43,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
    void Jump()
     {
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
+        anim.SetBool("Jump");
     }
 
 
